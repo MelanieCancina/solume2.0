@@ -1,0 +1,117 @@
+@use "../bases/variables";
+main{
+    .titulo{
+        @extend .tittle;
+    }
+    .contenedor {   
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        padding: 20px;
+        article{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 3px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0px 1px 7px 1px #908c8c;
+        }
+        .metodos-filtrados{
+            font-family: "Caudex", serif;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(76, 91, 2);
+            text-decoration: underline;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        .metodo{
+            font-family: "Caudex", serif;
+            font-style: italic;
+            font-size: 35px;
+            color: rgb(49, 18, 18);
+            text-decoration: none;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .filtros{
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 10px;
+        }
+        .detalle{
+            color: grey;
+            font-family: "Caudex", serif;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+    }
+    .carta{
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+        width: 100px;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .qr{
+            width:auto ;
+            height: 30vh;
+            border-color: black;
+            justify-content: right;
+            display: flex;
+        }
+    }
+    @include variables.mobile{
+        .titulo {
+            font-size: 2rem; 
+            padding: 20px 10px;
+        }
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .metodos-filtrados {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .metodo {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+        .metodo-filtro {
+            font-size: 1.5rem;
+            margin: 10px 5px;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container-fluid {
+            font-size: 1rem;
+            padding: 10px;
+        }
+        .nav-brand {
+            font-size: 1.1rem;
+        }
+        .titulo-navbar {
+            font-size: 1.5rem;
+        }
+        .logo-navbar {
+            width: 40px;
+            margin: 2px;
+        }
+        .btn-outline-light {
+            font-size: 0.9rem;
+            padding: 5px 10px;
+        }
+    }
+}

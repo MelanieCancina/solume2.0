@@ -1,0 +1,61 @@
+        /*<div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Como nacio Solume
+        </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+        Solume Coffee nació del sueño compartido de tres hermanas: Sofía, Lucía y Melanie, quienes combinaron sus nombres para crear una marca única. Inspiradas por su amor por el buen café y su deseo de crear un espacio acogedor y amigable para todos, imaginaron un lugar donde cada taza sea una experiencia especial. Desde nuestros inicios, hemos trabajado con dedicación para seleccionar los mejores granos y perfeccionar cada preparación, siempre con el objetivo de compartir nuestra pasión con cada persona que nos visita. Nuestro sueño no se queda aquí: queremos que Solume Coffee se convierta en un referente internacional, llevando el sabor y la calidez de nuestro café a cada rincón del mundo.
+    </div>
+
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Primeros Pasos
+        </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+        Solume Coffee nació del sueño compartido de tres hermanas: Sofía, Lucía y Melanie, quienes combinaron sus nombres para crear una marca única. Inspiradas por su amor por el buen café y su deseo de crear un espacio acogedor y amigable para todos, imaginaron un lugar donde cada taza sea una experiencia especial. Desde nuestros inicios, hemos trabajado con dedicación para seleccionar los mejores granos y perfeccionar cada preparación, siempre con el objetivo de compartir nuestra pasión con cada persona que nos visita. Nuestro sueño no se queda aquí: queremos que Solume Coffee se convierta en un referente internacional, llevando el sabor y la calidez de nuestro café a cada rincón del mundo.
+        </div>z
+        <div>
+            <img src="../assets/sobre-solume/foto-local.jpg" alt="foto del local" class="acocordion-img">
+        </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Somos Pet-Friendly
+        </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+        En Solume Coffee, amamos a los animales tanto como al buen café. Por eso, nuestro espacio es exclusivamente pet friendly, pensado para que disfrutes tu bebida favorita en compañía de tu mascota.
+        </div>
+        <div>
+            <img src="../assets/sobre-solume/foto interior.jpg" alt="foto pet friendly" class="acocordion-img">
+        </div>
+    </div>
+    </div>
+</div>
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+        Primeros Pasos
+        </button>
+    </h2>
+    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+        <div class="accordion-body">
+        En Solume Coffee, amamos a los animales tanto como al buen café. Por eso, nuestro espacio es exclusivamente pet friendly, pensado para que disfrutes tu bebida favorita en compañía de tu mascota.
+        </div>
+        <div>
+            <img src="../assets/sobre-solume/foto interior.jpg" alt="foto pet friendly" class="acocordion-img">
+        </div>
+    </div>
+    </div>
+</div>*/

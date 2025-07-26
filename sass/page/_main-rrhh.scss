@@ -1,0 +1,162 @@
+@use "../bases/variables";
+
+main {
+    .titulo {
+        font-family: "Caudex", serif;
+        font-style: italic;
+        color: rgb(61, 49, 21);
+        font-size: 50px;
+        padding: 70px;
+        text-decoration-line: underline;
+        text-align: center;
+        font-weight: bold;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color: #cccccc7e;
+        .puesto {
+        background-color: #b8cb7e;
+        padding: 20px;
+        border: 1px solid #32452a;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(69, 7, 7);
+        font-family: "Caudex", serif;
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            }
+        }
+        .explicacion {
+        margin: 5%;
+        font-size: 15px;
+        color: rgba(23, 9, 9, 0.945);
+        padding: 10px;
+        font-family: "Caudex", serif;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        background-color: #93732f;
+        }
+        .foto {
+        width: 25vw;
+        height: auto;
+        border-radius: 15px;
+        margin: 10px 10px 10px 20%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .subtitulo {
+        margin: 10% 30% 5% 40%;
+        font-family: "Caudex", serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        color: rgb(252, 220, 204);
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        .animate_animated.animate_pulse {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            }
+        }
+    .texto {
+        margin: 5% 15% 5% 15%;
+        background-color: #e7d4d0cc;
+        text-align: center;
+        font-weight: 10px;
+        font-size: 15px;
+        border-style: groove;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }   
+    form {
+        margin-top: 5%;
+        margin-bottom: 30px;
+        padding: 10px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff8e1;
+        border-radius: 10px;
+        text-align: center;
+        label {
+            padding: 10px;
+            margin: 12px;
+            border: 1px solid #211911;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: "Caudex", serif;
+            text-align: center;
+            }
+        input {
+            font-family: "Caudex", serif;
+            padding: 3px;
+            font-size: large;
+            border-radius: 10px;
+            text-align: center;
+            }
+        select {
+            padding: 5px;
+            border: 2px solid #5a291f;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: "Caudex", serif;
+            &:hover {
+                background-color: #e2a181;
+            }
+        }
+        option {
+            background-color: #812a2a;
+            color: #dfbdb2;
+            font-size: 15px;
+            &:hover {
+                background-color: rgb(207, 187, 161);
+            }
+        }
+        .button-2 {
+            padding: 10px;
+            margin: 2%;
+            font-family: "Caudex", serif;
+            background-color: #501010;
+            color: #e4d1cb;
+        }
+        .button-3 {
+            padding: 10px;
+            margin: 2%;
+            font-family: "Caudex", serif;
+            background-color: #04132d;
+            color: #e4d1cb;
+        }
+    }
+    @include variables.mobile {
+        .grid {
+        grid-template-columns: 1fr;
+        }
+        .explicacion {
+        font-size: 13px;
+        padding: 10px;
+        }
+        .foto {
+        width: 60vw;
+        height: auto;
+        margin: 1px 10px 10px 20%;
+        }
+        .subtitulo {
+        font-size: 25px;
+        margin: 15%;
+        }
+        form {
+        padding: 20px;
+        font-size: 14px;
+        }
+        label,
+        input,
+        select {
+        width: 70%;
+        }
+        button {
+        width: 80%;
+        margin-bottom: 15px;
+        }
+    }
+}

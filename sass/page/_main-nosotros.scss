@@ -1,0 +1,23 @@
+@use "../bases/variables";
+main{
+    .accordion-header{
+    font-family: "Caudex", serif;
+    background-color: bisque;
+    }
+    .accordion-body{
+    background-color: rgb(255, 231, 201);
+    font-family: "Caudex", serif;
+    }
+    .acocordion-img{
+    width: 20vw;
+    height: auto;
+    margin: 10px 0 10px 30%;
+    box-shadow: 0px 1px 7px 1px #908c8c;
+    }
+    @include variables.mobile{
+    .acocordion-img{
+        width: 70vw;
+        margin-left: 50px;
+        }
+    }
+}

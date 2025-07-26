@@ -1,0 +1,45 @@
+@use "../bases/variables";
+main{
+    .titulo{
+        @extend .tittle;
+    }
+    .carousel {
+        margin: 0 30% 30px 30%;
+        height: 40%;
+        width: 40%;
+        border: 20px;
+        padding: 5px;
+        .carousel-item {
+            img {
+            width: 50vw;
+            height: 90vh;
+            max-height: fit-content;
+            object-fit: cover;
+            border-radius: 12px;
+            }
+            .carousel-caption {
+                background-color: rgb(72, 9, 9);
+                padding: 15px;
+                border-radius: 20px;
+                color: rgba(185, 160, 160, 0.945);
+                position: static
+                }
+            }
+        }
+    .button-primary{
+        @extend .button;
+        }
+    @include variables.mobile{
+    .carousel {
+        margin: 0;
+        height: 60%;
+        width: auto;
+        }
+    .button{
+        margin: 5% 0 5% 10%;
+        }
+    .carousel-indicators{
+        margin-bottom: 0;
+        }
+    }
+}
