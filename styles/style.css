@@ -448,9 +448,9 @@ main form .button-3 {
     padding: 10px;
   }
   main .foto {
-    width: 60vw;
-    height: auto;
-    margin: 1px 10px 10px 20%;
+    width: 60vw !important;
+    height: auto !important;
+    margin: 1px 10px 10px 20% !important;
   }
   main .subtitulo {
     font-size: 25px;
