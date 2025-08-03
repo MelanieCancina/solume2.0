@@ -6,17 +6,17 @@
 }
 
 body {
-  background-image: url(../assets/Wallpaers/fondo\ 1.jpg);
+  background-image: url("../../assets/Wallpaers/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
 }
 
-.tittle, main .titulo {
+main .titulo {
   font-family: "Caudex", serif;
   font-style: italic;
-  color: rgb(61, 49, 21);
+  color: rgb(250, 225, 167);
   font-size: 50px;
   padding: 70px;
   text-decoration-line: underline;
@@ -81,11 +81,6 @@ header .container-fluid .navbar-nav .btn-outline-light:hover {
   border-color: #f0d0ae;
   text-decoration: none;
 }
-@media (max-width: 426px) {
-  header body {
-    overflow-x: hidden;
-  }
-}
 
 main .contenedor {
   display: grid;
@@ -95,13 +90,12 @@ main .contenedor {
 }
 main .contenedor article {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 3px;
   border-radius: 20px;
   text-align: center;
   padding: 15px;
   box-shadow: 0px 1px 7px 1px #908c8c;
 }
-main .contenedor .metodos-filtrados {
+main .contenedor article .metodos-filtrados {
   font-family: "Caudex", serif;
   font-size: 25px;
   font-weight: bold;
@@ -110,24 +104,22 @@ main .contenedor .metodos-filtrados {
   margin-bottom: 10px;
   margin-top: 15px;
 }
-main .contenedor .metodo {
+main .contenedor article .metodo {
   font-family: "Caudex", serif;
   font-style: italic;
   font-size: 35px;
   color: rgb(49, 18, 18);
-  text-decoration: none;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin: 15px 0 10px 0;
 }
-main .contenedor .filtros {
+main .contenedor article .filtros {
   width: 100%;
-  height: auto;
   max-width: 300px;
+  height: auto;
   margin: 0 auto;
   display: block;
   border-radius: 10px;
 }
-main .contenedor .detalle {
+main .contenedor article .detalle {
   color: grey;
   font-family: "Caudex", serif;
   font-size: 1rem;
@@ -140,7 +132,7 @@ main .carta {
   width: 100px;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -151,51 +143,65 @@ main .carta .qr {
   width: auto;
   height: 30vh;
   border-color: black;
-  justify-content: right;
   display: flex;
+  justify-content: center;
 }
 @media (max-width: 426px) {
   main .titulo {
     font-size: 2rem;
     padding: 20px 10px;
+    font-family: "Courier New", Courier, monospace;
   }
   main .contenedor {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 10px;
   }
-  main .metodos-filtrados {
+  main .contenedor article .metodos-filtrados {
     font-size: 1.5rem;
     margin: 10px 0;
   }
-  main .metodo {
+  main .contenedor article .metodo {
     font-size: 1.3rem;
     margin: 10px 0;
   }
-  main .metodo-filtro {
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  main .titulo {
+    font-size: 2.2rem;
+    padding: 30px 15px;
+  }
+  main .contenedor {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  main .contenedor article .metodos-filtrados {
+    font-size: 1.6rem;
+    margin: 15px 0;
+  }
+  main .contenedor article .metodo {
+    font-size: 1.4rem;
+    margin: 15px 0;
+  }
+}
+@media (min-width: 1025px) {
+  main .titulo {
+    font-size: 2.5rem;
+    padding: 40px 20px;
+  }
+  main .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+  main .contenedor article .metodos-filtrados {
+    font-size: 1.7rem;
+    margin: 20px 0;
+  }
+  main .contenedor article .metodo {
     font-size: 1.5rem;
-    margin: 10px 5px;
-    flex-direction: column;
-    text-align: center;
-  }
-  main .container-fluid {
-    font-size: 1rem;
-    padding: 10px;
-  }
-  main .nav-brand {
-    font-size: 1.1rem;
-  }
-  main .titulo-navbar {
-    font-size: 1.5rem;
-  }
-  main .logo-navbar {
-    width: 40px;
-    margin: 2px;
-  }
-  main .btn-outline-light {
-    font-size: 0.9rem;
-    padding: 5px 10px;
+    margin: 20px 0;
   }
 }
 
@@ -208,31 +214,48 @@ main .accordion-body {
   font-family: "Caudex", serif;
 }
 main .acocordion-img {
-  width: 20vw;
+  width: 10%;
   height: auto;
   margin: 10px 0 10px 30%;
   box-shadow: 0px 1px 7px 1px #908c8c;
 }
 @media (max-width: 426px) {
   main .acocordion-img {
-    width: 70vw;
+    width: 80%;
     margin-left: 50px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  main .acocordion-img {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  main .acocordion-img {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1025px) {
+  main .acocordion-img {
+    width: 50%;
+    margin-left: 30%;
   }
 }
 
 main .carousel {
-  margin: 0 30% 30px 30%;
-  height: 40%;
-  width: 40%;
-  border: 20px;
+  margin: 0 auto 30px auto;
+  width: 100%;
+  max-width: 1200px;
   padding: 5px;
 }
 main .carousel .carousel-item img {
-  width: 50vw;
-  height: 90vh;
-  max-height: fit-content;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
+  display: block;
 }
 main .carousel .carousel-item .carousel-caption {
   background-color: rgb(72, 9, 9);
@@ -243,15 +266,40 @@ main .carousel .carousel-item .carousel-caption {
 }
 @media (max-width: 426px) {
   main .carousel {
-    margin: 0;
-    height: 60%;
-    width: auto;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    padding: 0;
   }
   main .button, main .button-primary {
-    margin: 5% 0 5% 10%;
+    margin: 5% auto;
+    display: block;
   }
   main .carousel-indicators {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  main .carousel {
+    width: 90%;
+  }
+  main .button, main .button-primary {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  main .carousel {
+    width: 80%;
+  }
+  main .button, main .button-primary {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  main .carousel {
+    width: 70%;
+  }
+  main .button, main .button-primary {
+    margin-left: 15%;
   }
 }
 
@@ -273,8 +321,12 @@ main .resenas {
 }
 main .resenas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
+  margin: 0 auto;
+  padding: 30px 10px;
+  width: 100%;
+  max-width: 1200px;
 }
 main .card {
   background-color: #fffdf6;
@@ -285,7 +337,7 @@ main .card {
 }
 main .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgb(0, 0, 0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 main .card .card-img-top {
   height: 250px;
@@ -308,19 +360,33 @@ main .card .card-text {
 @media (max-width: 426px) {
   main .resenas-grid {
     grid-template-columns: 1fr;
-    padding: 30px 10px;
+  }
+  main .footer-container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  main .resenas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  main .resenas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  main .resenas-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
   }
 }
 
 main .titulo {
   font-family: "Caudex", serif;
-  font-style: italic;
-  color: rgb(61, 49, 21);
-  font-size: 50px;
-  padding: 70px;
-  text-decoration-line: underline;
-  text-align: center;
-  font-weight: bold;
+  color: rgb(250, 225, 167);
 }
 main .grid {
   display: grid;
@@ -363,7 +429,7 @@ main .subtitulo {
   font-style: italic;
   font-weight: bold;
   font-size: 40px;
-  color: rgb(252, 220, 204);
+  color: rgb(250, 225, 167);
   text-decoration: none;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
@@ -372,7 +438,7 @@ main .subtitulo .animate_animated.animate_pulse {
   animation-iteration-count: infinite;
 }
 main .texto {
-  margin: 5% 15% 5% 15%;
+  margin: 5% 15%;
   background-color: rgba(231, 212, 208, 0.8);
   text-align: center;
   font-weight: 10px;
@@ -429,8 +495,8 @@ main form .button-2 {
   padding: 10px;
   margin: 2%;
   font-family: "Caudex", serif;
-  background-color: #501010;
-  color: #e4d1cb;
+  background-color: #efc393;
+  color: #3a1206;
 }
 main form .button-3 {
   padding: 10px;
@@ -445,29 +511,52 @@ main form .button-3 {
   }
   main .explicacion {
     font-size: 13px;
-    padding: 10px;
   }
   main .foto {
-    width: 60vw !important;
-    height: auto !important;
-    margin: 1px 10px 10px 20% !important;
+    width: 90%;
+    height: 60%;
+    margin: 1rem auto;
   }
   main .subtitulo {
     font-size: 25px;
-    margin: 15%;
+    margin: 10% auto;
   }
   main form {
     padding: 20px;
     font-size: 14px;
   }
-  main label,
-  main input,
-  main select {
-    width: 70%;
+  main form label,
+  main form input,
+  main form select {
+    width: 100%;
   }
-  main button {
-    width: 80%;
+  main form button {
+    width: 100%;
     margin-bottom: 15px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  main .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .foto {
+    width: 40vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  main .foto {
+    width: 30vw;
+  }
+  main .subtitulo {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1025px) {
+  main .foto {
+    width: 25vw;
+  }
+  main .subtitulo {
+    font-size: 40px;
   }
 }
 
@@ -551,6 +640,22 @@ footer .copyright .footer-social img {
   }
   footer .qr {
     height: 20vh;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  footer .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .logo-footer {
+    width: 100px;
+  }
+}
+@media (min-width: 1025px) {
+  footer .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .logo-footer {
+    width: 10vw;
   }
 }
 

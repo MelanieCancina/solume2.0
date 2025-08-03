@@ -1,23 +1,48 @@
-@use "../bases/variables";
-main{
-    .accordion-header{
-    font-family: "Caudex", serif;
-    background-color: bisque;
+    @use "../bases/variables" as *;
+
+    main {
+    .accordion-header {
+        font-family: $fuente-principal;
+        background-color: bisque;
     }
-    .accordion-body{
-    background-color: rgb(255, 231, 201);
-    font-family: "Caudex", serif;
+
+    .accordion-body {
+        background-color: rgb(255, 231, 201);
+        font-family: $fuente-principal;
     }
-    .acocordion-img{
-    width: 20vw;
-    height: auto;
-    margin: 10px 0 10px 30%;
-    box-shadow: 0px 1px 7px 1px #908c8c;
+
+    .acocordion-img {
+        width: 10%;
+        height: auto;
+        margin: 10px 0 10px 30%;
+        box-shadow: 0px 1px 7px 1px #908c8c;
     }
-    @include variables.mobile{
-    .acocordion-img{
-        width: 70vw;
+
+    @include mobile {
+        .acocordion-img {
+        width: 80%;
         margin-left: 50px;
+        }
+    }
+
+    @include tablet {
+        .acocordion-img {
+        width: 60%;
+        margin-left: 20%;
+        }
+    }
+
+    @include laptop {
+        .acocordion-img {
+        width: 50%;
+        margin-left: 25%;
+        }
+    }
+    
+    @include desktop {
+        .acocordion-img {
+        width: 50%;
+        margin-left: 30%;
         }
     }
 }

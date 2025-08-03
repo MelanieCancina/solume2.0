@@ -1,4 +1,4 @@
-@use "../bases/variables";
+@use '../bases/variables' as *;
 header{
     .container-fluid{
         background-color: #4d2c1d;
@@ -11,7 +11,7 @@ header{
             font-size: 1.3rem;
             font-weight: 600;
             color: #ffdeb5;
-            font-family: "Caudex", serif;
+            font-family: $fuente-principal;
             .logo-navbar{
                 width: 60px;
                 height: auto;
@@ -49,11 +49,6 @@ header{
                 text-decoration: none;
                 }   
             }
-        }
-    }
-    @include variables.mobile{
-        body {
-            overflow-x: hidden;
         }
     }
 }

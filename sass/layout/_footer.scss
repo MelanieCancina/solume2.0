@@ -1,42 +1,51 @@
-@use "../bases/variables";
+@use '../bases/variables' as *;
+
 footer {
     background-color: #4d2c1d;
     padding: 2rem 1rem;
     color: #ffe8cb;
     font-family: "Caudex", serif;
+
     .footer-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         max-width: 1200px;
         margin: 0 auto;
+
         .logo-footer {
             width: 10vw;
             margin-bottom: 1rem;
             height: auto;
-            }
         }
-        ul {
-            list-style: none;
-            padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
         li {
             margin-bottom: 0.5rem;
             font-size: 0.95rem;
+
             a {
-            text-decoration: none;
-            color: #ffe8cb;
-            &:hover {
-                text-decoration: underline;
+                text-decoration: none;
+                color: #ffe8cb;
+
+                &:hover {
+                    text-decoration: underline;
                 }
             }
         }
     }
-        iframe {
+
+    iframe {
         width: 100%;
         height: 200px;
         border-radius: 10px;
         border: none;
-        }
+    }
+
     .copyright {
         border-top: 1px solid #ccc;
         margin-top: 2rem;
@@ -45,39 +54,64 @@ footer {
         flex-direction: column;
         align-items: center;
         font-size: 0.85rem;
+
         .footer-social {
             margin-top: 0.5rem;
             display: flex;
             gap: 1rem;
-        img {
-            width: 35px;
-            height: 35px;
+
+            img {
+                width: 35px;
+                height: 35px;
             }
         }
     }
-    @include variables.mobile{
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 10px;
+    @include mobile {
+        .footer-container {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 10px;
+        }
+
+        .logo-footer {
+            width: 120px !important;
+            margin: 0 auto 1rem auto;
+            max-width: 80%;
+            display: block;
+        }
+
+        li,
+        .copyright {
+            font-size: 0.8rem;
+        }
+
+        .carta {
+            width: 80px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .qr {
+            height: 20vh;
+        }
     }
-    .logo-footer {
-        width: 120px !important;
-        margin: 0 auto 1rem auto;
-        max-width: 80%;
-        display: block;
+
+    @include tablet {
+        .footer-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .logo-footer {
+            width: 100px;
+        }
     }
-    li,
-    .copyright {
-        font-size: 0.8rem;
+    @include desktop {
+        .footer-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .logo-footer {
+            width: 10vw;
+        }
     }
-    .carta {
-        width: 80px;
-        bottom: 10px;
-        right: 10px;
-    }
-    .qr {
-        height: 20vh;
-    }
-}
 }
