@@ -7,8 +7,8 @@ main {
 
     .carousel {
         margin: 0 auto 30px auto;
-        width: 100%;
-        max-width: 1200px;
+        width: 60%;
+        max-width: 500px;
         padding: 5px;
 
         .carousel-item {
@@ -37,7 +37,7 @@ main {
     @include mobile {
         .carousel {
         margin: 0 auto 20px auto;
-        width: 100%;
+        width: 90%;
         padding: 0;
         }
 
@@ -53,7 +53,7 @@ main {
 
     @include tablet {
         .carousel {
-        width: 90%;
+        width: 70%;
         }
 
         .button {
@@ -63,7 +63,7 @@ main {
 
     @include laptop {
         .carousel {
-        width: 80%;
+        width: 60%;
         }
 
         .button {
@@ -73,7 +73,7 @@ main {
 
     @include desktop {
         .carousel {
-        width: 70%;
+        width: 60%;
         }
 
         .button {

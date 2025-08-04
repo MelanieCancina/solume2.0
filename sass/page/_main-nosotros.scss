@@ -11,38 +11,37 @@
         font-family: $fuente-principal;
     }
 
-    .acocordion-img {
-        width: 10%;
-        height: auto;
-        margin: 10px 0 10px 30%;
-        box-shadow: 0px 1px 7px 1px #908c8c;
+    .accordion-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 1px 7px 1px #908c8c;
+    border-radius: 10px;
     }
 
+
     @include mobile {
-        .acocordion-img {
-        width: 80%;
-        margin-left: 50px;
-        }
+    .accordion-img {
+        width: 90%;
+    }
     }
 
     @include tablet {
-        .acocordion-img {
-        width: 60%;
-        margin-left: 20%;
-        }
+    .accordion-img {
+        width: 70%;
+    }
     }
 
     @include laptop {
-        .acocordion-img {
+    .accordion-img {
         width: 50%;
-        margin-left: 25%;
-        }
     }
-    
+    }
+
     @include desktop {
-        .acocordion-img {
-        width: 50%;
-        margin-left: 30%;
-        }
+    .accordion-img {
+        width: 30%;
+    }
     }
 }
